@@ -2,7 +2,7 @@
 
 function checkForSpam(message) {
   const message_low = message.toLowerCase();
-  if (message_low.includes("spam",) === true || message_low.includes("sale",) === true) {
+  if (message_low.includes("spam") || message_low.includes("sale")) {
     return true;
   }
   else {
